@@ -1,0 +1,116 @@
+.navv{
+    background-color: rgba(120, 179, 172, 0.9);
+    height: 60px;
+    
+
+}
+h1{
+    font-size: 2em;
+}
+.nav2{
+    display: flex;
+    gap: 20px;
+    padding-left: 60px;
+    background-color: white;
+    box-shadow: 1px 7px whitesmoke; 
+    text-align: justify;
+    top: 0;
+    position: sticky;
+    
+}
+.nav2 h2{
+    padding-left: 90px;
+    padding-top: 15px;
+}
+.main{
+    padding-left: 60px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    
+}
+.main h1{
+    font-size: 3.5em;
+}
+.main button{
+    background-color: rgb(109, 211, 211);
+    font-size: 1.5em;
+    cursor: pointer;
+    
+}
+
+.main img{
+     padding-left: 100px;
+     animation: float 3s linear infinite;
+     
+ }
+ @keyframes float{
+    0%,100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(2rem);
+    }
+
+ }
+
+ .sub{
+    padding-top: 30px;
+    padding-bottom: 40px;
+ }
+
+ .popular{
+    padding-top: 30px;
+    padding-bottom: 40px;
+ }
+ .link{
+    padding-left: 600px;
+    padding-top: 35px;
+    word-spacing: 30px;
+    
+ }
+ a:link{
+    
+    text-decoration: none;
+ }
+ a:hover{
+    color: red;
+ }
+ .fab{
+    font-size: 30px;
+    padding-top: 10px;
+    word-spacing: 20px;
+ }
+.like{
+    display: flex;
+}
+
+.chef{
+    padding-left: 150px;
+    padding-top: 30px;
+    display: flex;
+    gap:100px;
+    
+}
+.chef img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.dimage{
+    display: flex;
+    gap:100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    
+}
+.dimage img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+     transition: .3s ease-in-out;
+}
+
+    footer{
+        display: flex;
+        gap:340px;
+    }
