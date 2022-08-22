@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+<style>
+    .container{
+        margin-left: 300px;
+        margin-right: 300px ;
+        background: rgb(87, 159, 195);
+        font-size: 33px;
+        padding-left: 30px;
+    }
+    #submit{
+        margin-top: 50px;
+        font-size: 30px;
+        background-color: #6292a2;
+        
+    }
+    #submit:hover{
+        background-color: rgb(182, 192, 201);
+        cursor: pointer;
+    }     
+    p{
+       color: red;
+       font-size:20px;
+        
+    }
+
+</style>
+<script>
+    function validate(){
+       
+
+        
+        //mobile number validation
+        var number= document.getElementById("num").value
+        var phn= /^[7-9][0-9]{9}$/;
+
+        if( !phn.test(number))
+        {
+            document.getElementById("cnum").innerHTML = "**invalid phone number"
+        }
+
+      
+        //fname validation
+        var fname=document.getElementById("f_name").value;
+        var name=/^[a-z]{1,15}$/i;
+
+        if (!name.test(fname)){
+            
+           document.getElementById("cname").innerHTML = "**invalid first name"
+        }
+       
+        // lastname validation
+        var  lname= document.getElementById("l_name").value;
+
+        if(!name.test(lname)){
+            
+            document.getElementById("clname").innerHTML = "**invalid last name"
+        }
+
+        //email validation
+
+        var email=document.getElementById("mail").value;
+        var patt1=/^([a-z0-9\.-]+)@([a-z0-9\.]+)$/i
+
+        if( !patt1.test(email)){
+            
+            document.getElementById("cemail").innerHTML = "**invalid email id "
+        }
+
+        //password validation
+
+        var pword=document.getElementById("pw").value;
+
+        
+    }
+</script>
+<body>
+       <center class="container">
+        <h1>Validation Form</h1>
+    <div >
+        First name: <input type="text" id="f_name"><br>
+        <p id="cname"></p>
+        last name: <input type="text" id="l_name"><br>
+        <p id="clname"></p>
+        email: <input type="email" id="mail"> <br>
+        <p id="cemail"></p>
+        phone number: <input type="text" id="num"> <br>
+        <p id="cnum"></p>
+        <input id="submit" type="button" value="submit" onclick="validate()">
+    </div>
+</center>
+    
+</body>
+</html>

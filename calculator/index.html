@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+</head>
+<style>
+  .img{
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-minimalistic-small-icon-ad-background-backgroundfreshblue-backgroundcloudhot-air-image_78116.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+  }
+  .main{
+padding: 1.6em;   
+border: 0.3em solid rgb(170, 37, 81);
+ margin:200px auto;
+ border-radius: 20px;
+ background-image: url(https://cdn1.vectorstock.com/i/1000x1000/17/50/abstract-background-calculator-vector-11601750.jpg);
+
+    
+  }
+  .num
+  {
+  border-radius: 10px;
+  background-color:#8ad7e3;
+  color: black;
+  font-size:15px;
+  border-color:#35a0da ;
+  width:90%;
+  height: 50px;
+  }
+  #ans
+  {
+  border-radius: 15px;
+  text-align: right;
+  background-color:white;
+  border-color: rgb(195, 140, 53) ;
+  width:96%;
+  height:40px;
+  }
+  .btn{
+    border-radius: 10px;
+  background-color:aquamarine;
+  color: black;
+  border-color:greenyellow ;
+  width:200%;
+  height: 50px;
+  }
+  </style>
+<body class="img">
+  <div>
+     <table class="main">
+      <tr>
+      
+        <td colspan="3"><input type="text"  id="ans"/></td>
+        <td><input  type="button" value="c" class="btn" onclick="clr()"/> </td>
+        <tr>
+        <td><input type="button" value="1" class="num" onclick="display('1')"/> </td>
+        <td><input type="button" value="2" class="num" onclick="display('2')"/> </td>
+        <td><input type="button" value="3" class="num" onclick="display('3')"/> </td>
+        <td><input type="button" value="+" class="btn" onclick="display('+')"/> </td>
+        </tr>
+        <tr>
+        <td><input type="button" value="4" class="num"  onclick="display('4')"/> </td>
+        <td><input type="button" value="5" class="num" onclick="display('5')"/> </td>
+        <td><input type="button" value="6" class="num" onclick="display('6')"/> </td>
+        <td><input type="button" value="-" class="btn" onclick="display('-')"/> </td>
+        </tr>
+        <tr>
+        
+        <td><input type="button" value="7" class="num"  onclick="display('7')"/> </td>
+        <td><input type="button" value="8" class="num" onclick="display('8')"/> </td>
+        <td><input type="button" value="9" class="num" onclick="display('9')"/> </td>
+        <td><input type="button" value="*" class="btn" onclick="display('*')"/> </td>
+        </tr>
+        <tr>
+        <td><input type="button" value="." class="num"  onclick="display('.')"/> </td>
+        <td><input type="button" value="0" class="num"  onclick="display('0')"/> </td>
+        <td><input type="button" value="/" class="num" onclick="display('/')"/> </td>
+        
+        <td><input type="button" value="=" class="btn" onclick="solve()"/> </td>
+        </tr>
+     </table>
+    </div>
+
+     <script src="main.js"></script>
+</body>
+</html>
