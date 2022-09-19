@@ -1,0 +1,28 @@
+ <h3>directives</h3>
+
+<div *ngIf="book ; then Avail; else notAvailable">
+    exist
+</div>
+<ng-template #Avail>
+    <!-- <div *ngFor="let i of books ">
+        <div>
+            {{i.bookid}}
+        </div>
+    </div> -->
+    book is available
+</ng-template>
+<ng-template #notAvailable>
+    book is not available
+</ng-template> 
+<!-- <h3>Using NgIf with Then and Else</h3> -->
+<!-- <b>Example-1:</b><br /><br />
+
+<div *ngIf="book; then thenBlock; else elseBlock"> </div>
+<ng-template #thenBlock>
+    <div> <b>Data is valid.</b> </div>
+</ng-template>
+<ng-template #elseBlock>
+    <div> <b>Data is invalid.</b> </div>
+</ng-template> -->
+<p *ngIf="true">hiiii!</p>
+<p *ngIf="true"> hello</p>

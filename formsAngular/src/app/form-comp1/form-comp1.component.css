@@ -1,0 +1,25 @@
+:host{
+    text-align: center;
+}
+.container{
+    align-items: center;
+    background-color: aqua;
+    padding: 2rem;
+}
+
+.form-group{
+    text-align: center;
+}
+
+.errParent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.warnText{
+   padding: 6px 10px;
+   color: red;
+   /* margin-top: -10px; */
+}

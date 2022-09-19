@@ -1,0 +1,29 @@
+<label for="">
+    employee name: 
+    <input type="text" [formControl]="EmployeeName">
+
+</label>
+<P>VALUE: {{EmployeeName.value}}</P>
+
+<button (click)="updateEmployeeName()">Refresh</button>
+
+<form [formGroup]="employeeForm">
+    <label for="">
+        name:
+        <input type="text" formControlName="Name">
+    </label> <br>
+    <label for="">
+        Designation:
+        <input type="text" formControlName="Designation">
+    </label> <br>
+    <label for="">
+        Country:
+        <input type="text" formControlName="Country">
+    </label> <br>
+    <label for="">
+        City:
+        <input type="text" formControlName="City">
+    </label>
+</form>
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()"></form>
+<button type="submit">Submit</button>

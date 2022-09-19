@@ -1,0 +1,54 @@
+<!-- <input type="text"  [(ngModel)]="stng">
+<button (click)="storedata()">Submit  </button>
+<h3 *ngFor="let s of arr">{{s}}</h3> -->
+<!-- <h1>welcome</h1>
+<img [src]="img" alt="">
+<div style="text-align:center;">
+<button (click)="onclick()">submit</button>
+<input type="text" [(ngModel)]="value">{{value}}
+</div> -->
+
+<!-- <h2>{{5.678|number:'3.4-5'}}</h2>
+<h2>{{0.25|currency}}</h2>
+<h2>{{date|date}}</h2> -->
+<!-- <h2>{{name|titlecase}}</h2> -->
+
+<!-- 
+<input type="text" [(ngModel)]="stng" >
+
+<button (click)="upperCase()">upper</button>
+<button (click)="lowerCase()">low</button>
+<button (click)="percentage()">perc</button>
+<button (click)="varr = 'curr'">currency</button>
+<button (click)="varr = 'clr' ">Clear </button>
+
+
+
+<div [ngSwitch]="varr">
+<h3 *ngSwitchCase=" 'up' "> {{stng | uppercase }}</h3>
+ <h3 *ngSwitchCase=" 'low' ">{{stng | lowercase }}</h3>
+ <h3 *ngSwitchCase="'per'">{{stng | percent }}</h3>
+<h3 *ngSwitchCase="'curr'">{{stng | currency }}</h3>  
+<h3 *ngSwitchCase="'clr'"> </h3>
+
+</div> -->
+
+<input type="text" [(ngModel)]="stng" >
+<button (click)="upperCase()">upper</button>
+<button (click)="lowerCase()">low</button>
+<button (click)="titleCase()">title</button>
+<button (click)="slice()">slice</button>
+<button (click)="percentage()">perc</button>
+<button (click)="currency()">currency</button>
+
+
+
+
+<h3 *ngIf="up">{{stng|uppercase}}</h3>
+<h3 *ngIf="low">{{stng|lowercase}}</h3>
+<h3 *ngIf="perc">{{stng|percent}}</h3>
+<h3 *ngIf="curr">{{stng|currency}}</h3>
+<h3 *ngIf="title">{{stng|titlecase}}</h3>
+<h3 *ngIf="slicee">{{stng|slice:0:3}}</h3>
+
+

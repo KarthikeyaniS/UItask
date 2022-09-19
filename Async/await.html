@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <button onclick="fetchdata()"> fetch</button>
+    <button onclick="postdata()"> post</button>
+    <button onclick="putdata()"> put</button>
+    <button onclick="deletedata()"> delete</button>
+    
+</body>
+<script>
+      function fetchdata(){
+        axios.get('httpsh63046ead761a3bce77e78bc0.mockapi.io/corestack')
+        .then(res=>{
+            console.log(res)
+        } )
+        .catch(err=>console.log("error"))
+    }
+
+    function postdata(){
+        axios.post('https://63046ead761a3bce77e78bc0.mockapi.io/corestack',{ name:"avi"})
+        .then(res=>{
+            console.log(res)
+        } )
+        .catch(err=>console.log("error"))
+    }
+    function putdata(){
+        axios.put('https://63046ead761a3bce77e78bc0.mockapi.io/corestack/1',{
+            name:"Hi pooja this is avinash  i have done with this stuff :)"
+        })
+        .then(res=>{
+            console.log(res)
+        } )
+        .catch(err=>console.log("error"))
+    }
+    
+    
+    function deletedata(){
+        axios.delete('https://63046ead761a3bce77e78bc0.mockapi.io/corestack/4')
+        .then(res=>{
+            console.log(res)
+        })
+        .catch(err=>console.log("error"))
+    }
+</script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"> </p>
+    
+</body> 
+</html>
+
+<script>
+
+    // SYNCHRONOUS
+
+    // const prr= document.getElementById("para");
+    //  prr.textContent="I am devil";
+    // alert ('text set!');
+    // prr.style.color='red';
+
+     // ASYNC
+    const prr= document.getElementById("para");
+    setTimeout(()=>{
+        prr.textContent="I am devil";
+
+    },3000)
+    prr.style.color='red';
+</script>
+
+
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<!-- i can give any name to my directive -->
+<div ng-app="myApp" w3-test-directive></div>
+
+<script>
+
+var app = angular.module("myApp", []);
+app.directive("w3TestDirective", function() {
+    return {
+        template : "I was made in a directive constructor!"
+    };
+});
+</script>
+
+</body>
+</html>
+
+
